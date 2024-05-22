@@ -41,6 +41,8 @@ import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -103,12 +105,14 @@ fun HeroSection(menuItemsLocal: List<MenuItemRoom>) {
                 "Little Lemon",
                 fontSize = 40.sp,
                 fontWeight = FontWeight.Bold,
-                color = LittleLemonColor.yellow
+                color = LittleLemonColor.yellow,
+                style = MaterialTheme.typography.labelLarge
             )
             Text(
                 "Chicago",
                 fontSize = 24.sp,
                 color = LittleLemonColor.cloud
+                , fontStyle = FontStyle(R.font.colo_letttellemon)
             )
             Row(
                 horizontalArrangement = Arrangement.SpaceBetween,
