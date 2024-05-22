@@ -96,7 +96,7 @@ fun HeroSection(menuItemsLocal: List<MenuItemRoom>) {
         modifier = Modifier.padding(start = 5.dp, end = 5.dp, top = 5.dp, bottom = 5.dp)
     ) {
         Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
+            horizontalAlignment = Alignment.Start,
             modifier = Modifier
                 .fillMaxWidth(1.5f)
                 .background(LittleLemonColor.green)
@@ -130,8 +130,9 @@ fun HeroSection(menuItemsLocal: List<MenuItemRoom>) {
                     painter = painterResource(id = R.drawable.hero_image),
                     contentDescription = "Hero Image",
                     modifier = Modifier
-                        .fillMaxWidth(0.5F)
+                        .fillMaxWidth(0.8F)
                         .clip(RoundedCornerShape(10.dp))
+                        .align(Alignment.Top)
                 )
             }
         }
